@@ -32,11 +32,20 @@
         echo "x<=y: " . ($x<=$y) . "<br/>";
     ?>
     <?php
-    //http://localhost:8008/?x=5
     $x = $_GET["x"];
     $y = $_GET["y"];
     echo "x + y = " . ($x + $y) . "<br/>";
     echo "x == y = " . ($x == $y) . "<br/>";
     ?>
+    <table border="1">
+        <?php
+            for ($i=1; $i<=5; $i++) {
+                echo "
+                <tr>
+                    <td> $i </td>
+                </tr>
+                ";
+            }
+        ?>
 </body>
 </html>
